@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<!-- Input form for Broward College CSE Student Advising Request Page-->
+<head>
+<title>CSE Student Advising Request Page</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="CSE Student Advising Request Page">
+	<meta name="keywords" content="CSE,Degrees,Web Development,Programming,advising">
+	<meta name="author" content="Ester Sims">
+<link rel="stylesheet" type="text/css" href="../finalstyle.css" />
+<!-- using internal style to center video and caption -->	
+<style type="text/css">
+	.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	div.club{text-align: center;}
+
+</style>
+</head>
+<!--body-->
+<body>
+<a id="top"></a>
+<!-- header sections with external links-->
+<header>
+<h1>Welcome to the Broward College Computer Science Department </h1>
+	<h2> Student Advising Request Form</h2>
+</header>
+<nav>
+<ul class="a">
+  <li class="b" ><a href="http://www.broward.edu/" target="_blank"><img  alt="BC Logo" src="../assets/bc_logo.jpg" height="50"></a></li>
+  <li class="b" ><a href="../sims_home.html">Home</a></li>
+  <li class="b" ><a href="sims_resume.html">Resume</a></li>
+  <li class="b" ><a href="sims_calendar_homepage.html">Calendar</a></li>
+  <li class="b" ><a class="active" href="#sims_form">Form</a></li>
+  <li class="b" ><a href="sims_imagemap.html">Image Map</a></li>
+  <li class="b" ><a href="sims_skills_page.html">Skills</a></li>
+  <li style="float:right"><a href="http://cse.broward.edu/wit/" target="_blank"><img  alt="WiT Logo" src="../assets/getwititlogo.png" height="50"></a>
+</li>
+</ul>
+
+</nav>
+
+<main>
+<!-- div section to format page with css page-->
+<div >
+<!--form divided to sections with fieldset-->
+<form action="http://ss1.ciwcertified.com/cgi-bin/process.pl" method="post" target="_blank">
+<fieldset>
+<legend>Please complete this form to request an appointment with an advisor</legend><br />
+<!--setting required input fields-->
+* Information required <br /><br/>
+<fieldset>
+<legend>Personal Information</legend><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ID Number*&nbsp;&nbsp;<input type="text" name="studnum" size="15" maxlength="9" required/><br /><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Name*&nbsp;&nbsp;<input type="text" name="fname" size="25" required/>&nbsp;&nbsp;&nbsp;
+Last Name*&nbsp;&nbsp;<input type="text" name="lname" size="25" required/><br /><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gender:
+<input type="radio" name="gender" value="Male"/>Male&nbsp;&nbsp;&nbsp;
+<input type="radio" name="gender" value="Female"/>Female&nbsp;&nbsp;&nbsp;
+<input type="radio" name="gender" value="na"/>Not Reported
+</fieldset>
+
+<fieldset>
+<legend>Address</legend><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Street*&nbsp;&nbsp;<input type="text" name="street" size="69" required/><br /><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City*&nbsp;&nbsp;<input type="text" name="city" size="30" required/>&nbsp;&nbsp;&nbsp;&nbsp;
+State*&nbsp;&nbsp;<input type="text" name="state" size="2" maxlength="2" placeholder="FL" required/>&nbsp;&nbsp;&nbsp;&nbsp;
+Zip Code*&nbsp;&nbsp;<input type="text" name="zip" size="5" maxlength="5" required/><br/><br />
+</fieldset>
+
+<fieldset>
+<legend>Contact Information</legend><br />
+&nbsp;&nbsp;&nbsp;&nbsp;Home Phone&nbsp;&nbsp;<input type="text" name="hphone" size="12" maxlength="12" placeholder="xxx-xxx-xxxx"/>&nbsp;&nbsp;&nbsp;&nbsp;
+Cell Phone*&nbsp;&nbsp;<input type="text" name="cphone" size="12" maxlength="12" placeholder="xxx-xxx-xxxx" required/><br /><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email*&nbsp;&nbsp; <input type="text" name="email" size="50" required/><br/><br />
+</fieldset>
+
+<br />
+<fieldset>
+<legend>Degree Information</legend><br />
+&nbsp;&nbsp;&nbsp;&nbsp;Advisor Name&nbsp;&nbsp;<input type="text" name="advisor" size="25"/><br/><br />
+Select your Major &nbsp;&nbsp;
+<select>
+	<option value="csaa" selected>Computer Science AA</option>
+	<option value="dbaas">Database Administrator AS</option>
+	<option value="egaa">Engineering AA</option>
+	<option value="mcseas">Microsoft MCSE AS</option>
+	<option value="sdas">Software Developer AS</option>
+	<option value="wdas">Web Design AS</option>
+</select>
+<br/><br />
+
+<fieldset>
+<legend>Appintment Reason (Select all that apply)</legend><br />
+<input type="checkbox" name="reason" value="goal" />Academic goals / Career Path<br />
+<input type="checkbox" name="reason" value="changemagor" />Change of Major<br />
+<input type="checkbox" name="reason" value="substitution" />Course Substitution<br />
+<input type="checkbox" name="reason" value="graduation" />Apply for Graduation<br />
+<input type="checkbox" name="reason" value="other" />Other: <br />
+<textarea name="message" placeholder="type here" rows="4" cols="50" style="box-shadow: 5px 5px 5px grey;"></textarea> 
+</fieldset>
+
+<input type="reset" />&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="submit" />
+</fieldset>
+</fieldset>
+</form>
+<!--video section with caption -->
+<div class="club"><h3>Robotic and Women in Tech Clubs Fundraiser</h3></div>
+<video width="320" height="240" poster="../assets/battlebotposter.jpg" controls class="center">
+  <source src="../assets/battlebot.mp4" type="video/mp4">
+  <source src="../assets/battlebot.ogv" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+</div>
+</main>	
+<!--footer with link to top of page  -->
+<!-- footer -->
+<footer>
+	<a href="#top">Top</a> &nbsp;&nbsp;&nbsp; <!--link to the top of page-->
+<!--links to Broward College site-->
+	<a href="http://www.broward.edu/" target="_blank">Broward College Home Page</a> &nbsp;&nbsp;&nbsp; 
+	<a href="http://www.broward.edu/calendar" target="_blank">Broward College official Calendar</a> 
+<!--my info-->
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Created by Ester Sims March, 2016</em>
+</footer>
+	
+</body>
+</html>
